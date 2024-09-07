@@ -7,7 +7,7 @@ import utilities
 
 class employee: 
     def __init__(self, address:str):
-        #address is a string, 'W:\7-DIGIT_ID LASTNAME, FIRSTNAME'
+        #address is a string, 'C:\\ 7-DIGIT_ID LASTNAME, FIRSTNAME'
         self.orig_address = address
         address = leading_ws_trimmed(address)
         self.ID = address[3:10]
