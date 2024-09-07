@@ -31,7 +31,7 @@ def main():
     
     Downloaded = directory(from_dir)
 
-    #searching for signed documents
+    #searching for signed letters
     all_files = Downloaded.get_all_files(f'SIGNED {current_year}')
 
     Active = directory(to_dir)

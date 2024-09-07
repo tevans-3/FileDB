@@ -1,3 +1,4 @@
+
 class directory:
     def __init__(self, address:str):
         self.address = address
@@ -10,6 +11,7 @@ class directory:
             if os.path.isfile(filename) and containing in filename:
                 no_ws = leading_ws_trimmed(filename)
                 files[no_ws[3:10]] = filename
+
         self.extracted = files
         return files
     
