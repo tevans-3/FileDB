@@ -3,6 +3,7 @@ import pathlib, glob, shutil, csv
 from pathlib import Path 
 import datetime
 import directory
+import utilities
 
 class employee: 
     def __init__(self, address:str):
@@ -16,7 +17,6 @@ class employee:
         self.full_path = os.path.join(self.folder, self.fullname)
         self.file_to_upload = ''
         self.role = ''
-        self.
         try: 
             self.firstname = self.fullname.split(',')[1].strip()
         except Exception as IndexError: 
