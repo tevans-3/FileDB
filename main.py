@@ -6,7 +6,7 @@ import datetime
 import argparse
 from argparse import ArgumentParser
 
-import employee
+import record
 import active
 import inactive 
 import in_progress 
@@ -44,6 +44,7 @@ def main():
     for employee_subdir in all_employees:  
         new_emp = employee_file(employee_subdir)
         all_employees[new_emp.ID] = new_emp
+    print(all_employees)
 
 if __name__=="__main__":
     main()
