@@ -1,8 +1,3 @@
-import pickle 
-import os 
-import pathlib
-from pathlib import path 
-
 class DB:
     def __init__(self, src_folders, load_saved=0):
         self.src_folders = src_folders
@@ -27,5 +22,6 @@ class DB:
     
     def load(self): 
         with open('db.txt', 'rb') as h: 
-            self.store = pickle.load(h)
-            self.store = loaded
+            loaded = pickle.load(h)
+            return loaded
+      
